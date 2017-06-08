@@ -8,5 +8,6 @@ xCode 9
 Swift 4
 
 VGGL16
+# HotDogDetector
 
-![HotDogDetector](http://imgur.com/a/LWpm5)
+![HotDogDetector](http://i.imgur.com/hooiuKR.png)
