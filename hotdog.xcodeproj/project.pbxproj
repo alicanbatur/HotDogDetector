@@ -12,6 +12,8 @@
 		CF5C2EF11EE9551D00DAB11E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5C2EEF1EE9551D00DAB11E /* Main.storyboard */; };
 		CF5C2EF31EE9551D00DAB11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF5C2EF21EE9551D00DAB11E /* Assets.xcassets */; };
 		CF5C2EF61EE9551D00DAB11E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5C2EF41EE9551D00DAB11E /* LaunchScreen.storyboard */; };
+		CF5C2F191EE9966600DAB11E /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF5C2F181EE9966600DAB11E /* VGG16.mlmodel */; };
+		CF5C2F1C1EE99B5800DAB11E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C2F1B1EE99B5800DAB11E /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CF5C2EF21EE9551D00DAB11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF5C2EF51EE9551D00DAB11E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF5C2EF71EE9551D00DAB11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5C2F181EE9966600DAB11E /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VGG16.mlmodel; path = "../../../ML's/VGG16.mlmodel"; sourceTree = "<group>"; };
+		CF5C2F1B1EE99B5800DAB11E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		CF5C2EEA1EE9551D00DAB11E /* hotdog */ = {
 			isa = PBXGroup;
 			children = (
+				CF5C2F1A1EE99B2E00DAB11E /* Extensions */,
 				CF5C2EEB1EE9551D00DAB11E /* AppDelegate.swift */,
 				CF5C2EED1EE9551D00DAB11E /* ViewController.swift */,
 				CF5C2EEF1EE9551D00DAB11E /* Main.storyboard */,
+				CF5C2F181EE9966600DAB11E /* VGG16.mlmodel */,
 				CF5C2EF21EE9551D00DAB11E /* Assets.xcassets */,
 				CF5C2EF41EE9551D00DAB11E /* LaunchScreen.storyboard */,
 				CF5C2EF71EE9551D00DAB11E /* Info.plist */,
 			);
 			path = hotdog;
+			sourceTree = "<group>";
+		};
+		CF5C2F1A1EE99B2E00DAB11E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF5C2F1B1EE99B5800DAB11E /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				CF5C2EEE1EE9551D00DAB11E /* ViewController.swift in Sources */,
 				CF5C2EEC1EE9551D00DAB11E /* AppDelegate.swift in Sources */,
+				CF5C2F191EE9966600DAB11E /* VGG16.mlmodel in Sources */,
+				CF5C2F1C1EE99B5800DAB11E /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +328,7 @@
 				CF5C2EFC1EE9551D00DAB11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
